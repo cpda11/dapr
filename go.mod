@@ -418,6 +418,8 @@ replace github.com/dapr/components-contrib => ../components-contrib
 
 replace github.com/cpda11/dapr-elrond => ../
 
+replace github.com/ElrondNetwork/elrond-sdk-erdgo v1.0.23 => ../elrond-sdk-erdgo
+
 // TODO Workaround from https://github.com/ElrondNetwork/elrond-sdk-erdgo/blob/main/go.mod
 replace github.com/ElrondNetwork/arwen-wasm-vm/v1_2 v1.2.35 => github.com/ElrondNetwork/arwen-wasm-vm v1.2.35
 
