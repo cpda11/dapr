@@ -57,6 +57,7 @@ import (
 	"github.com/dapr/components-contrib/state/cassandra"
 	"github.com/dapr/components-contrib/state/cockroachdb"
 	"github.com/dapr/components-contrib/state/couchbase"
+	"github.com/dapr/components-contrib/state/elrond-blockchain"
 	"github.com/dapr/components-contrib/state/gcp/firestore"
 	"github.com/dapr/components-contrib/state/hashicorp/consul"
 	"github.com/dapr/components-contrib/state/hazelcast"
@@ -239,6 +240,9 @@ func main() {
 			}),
 			state_loader.New("azure.tablestorage", func() state.Store {
 				return state_azure_tablestorage.NewAzureTablesStateStore(logContrib)
+			}),
+			state_loader.New("elrond-blockchain", func() state.Store {
+				return elrond_blockchain.NewAccountStorage(logContrib)
 			}),
 			state_loader.New("cassandra", func() state.Store {
 				return cassandra.NewCassandraStateStore(logContrib)
