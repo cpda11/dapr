@@ -165,7 +165,7 @@ require (
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/coreos/go-oidc v2.1.0+incompatible // indirect
-	github.com/cpda11/dapr-elrond v0.0.0-00010101000000-000000000000 // indirect
+	github.com/cpda11/dapr-elrond v0.0.1 // indirect
 	github.com/creasty/defaults v1.5.2 // indirect
 	github.com/cyphar/filepath-securejoin v0.2.3 // indirect
 	github.com/dancannon/gorethink v4.0.0+incompatible // indirect
@@ -416,7 +416,7 @@ replace github.com/eclipse/paho.mqtt.golang => github.com/shivamkm07/paho.mqtt.g
 
 replace github.com/dapr/components-contrib => ../components-contrib
 
-replace github.com/cpda11/dapr-elrond => ../
+replace github.com/cpda11/dapr-elrond v0.0.1 => ../
 
 replace github.com/ElrondNetwork/elrond-sdk-erdgo v1.0.23 => ../elrond-sdk-erdgo
 
